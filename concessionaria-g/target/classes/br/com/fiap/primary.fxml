@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="br.com.fiap.PrimaryController">
+  <tabs>
+    <Tab text="Cadastro">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="223.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="377.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Marca">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Modelo" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Placa" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Preço" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ano" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#salvar" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField GridPane.columnIndex="1" />
+                  <TextField fx:id="textFieldMarca" GridPane.columnIndex="1" />
+                  <TextField fx:id="textFieldModelo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="textFieldPlaca" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="textFieldPreco" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="textFieldAno" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </content></Tab>
+    <Tab text="Consulta" />
+  </tabs>
+</TabPane>
